@@ -1,0 +1,7 @@
+{
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": false
+    },
+    "python.defaultInterpreterPath": "/Users/home/Projects/Investments/investmentsvenv/bin/python3.9"
+}
