@@ -29,11 +29,13 @@ with st.form("Login", clear_on_submit=False):
 overview = st.button("See accounts overview", key = 'overview')
 if overview:
     st.header('Accounts')
-    st.json(accounts)
+    st.dataframe(pd.DataFrame(accounts))
     st.header('Holdings')
-    st.json(holdings)
+    st.dataframe(pd.DataFrame(holdings))
+    st.header('Transactions')
+    st.dataframe(pd.DataFrame(transactions))
+    st.header('Valuations')
     st.json(valuations)
-    st.json(transactions)
 
 
 # Home view
